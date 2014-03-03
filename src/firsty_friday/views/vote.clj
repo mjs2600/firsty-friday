@@ -6,13 +6,13 @@
            [firsty-friday.models.restaurants :as restaurant-model]))
 
 (defn- restaurant-voting [restaurant]
-  (html [:h3 (:name restaurant)]
-        (submit-button "Vote")))
+  (html [:h3 (:name (:data restaurant))]
+        (submit-button {:data-id (:id restaurant)} "Vote")))
 
 (defn restaurants-voting [restaurants]
   (string/join (map restaurant-voting
-            restaurants)))
+                    restaurants)))
 
 (defn index []
   (html5 [:h1 "Firsty Friday Voting"]
-         (restaurants-voting restaurant-model/all)))
+         (restaurants-voting (restaurant-model/all))))
