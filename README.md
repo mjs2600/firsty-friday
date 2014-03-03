@@ -17,4 +17,5 @@ To start a web server for the application, run:
 ## License
 
 Copyright © 2014 Michael Simpson
+
 Available under the GNU Affero General Public License
