@@ -1,6 +1,6 @@
 # firsty-friday
 
-FIXME
+A Firsty Friday voting app.
 
 ## Prerequisites
 
@@ -16,4 +16,5 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Michael Simpson
+Available under the GNU Affero General Public License
